@@ -1,0 +1,33 @@
+:root {
+    --brand-gold: #FFBC0D;
+    --brand-red: #DB0007;
+    --brand-kraft: #B69A81;
+    --brand-gray: #F7F7F7;
+    --brand-charcoal: #2D2D2D;
+}
+
+* {
+    background-color: var(--brand-kraft);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--brand-gray);
+}
+
+.icon {
+    width: 30px;
+    height: 28px;
+}
+
+.footer-container, 
+.footer {
+    background-color: var(--brand-red);
+}
+
+.sandwich {
+    width: 500px;
+}

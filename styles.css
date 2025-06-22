@@ -24,16 +24,35 @@ html, body {
     text-align: center;
 }
 
-.title {
+.title,
+.sub {
     color: var(--brand-red);
     font-weight: 900;
+}
+
+.title {
     font-size: 5rem;
-    margin-top: 6rem;
+    margin-top: -1.5rem;
     margin-bottom: -2rem;
 }
 
+.sub {
+    margin-top: 6rem;
+}
+
+.image-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
 .image {
-    width: 4px;
+    width: 400px;
+    position: relative;
+    z-index: 3;
+    margin-bottom: -3rem;
     filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.836));
 }
 
@@ -43,8 +62,10 @@ html, body {
     font-weight: 900;
     width: 450px;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 3rem;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .converter {
@@ -78,11 +99,8 @@ html, body {
     border: none;
 }
 
-select {
-    border: none;
-}
-
 .button {
+    margin-top: 1.5rem;
     width: 24rem;
     height: auto;
     background-color: var(--brand-gold);

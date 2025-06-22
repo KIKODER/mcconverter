@@ -8,14 +8,17 @@
 </head>
 <body>
     <div id="app">
-        <div class="title">
-            <h1>McConverter</h1>
+
+        <div class="title-container">
+            <h1 class="title">McConverter</h1>
         </div>
-        <div class="pic">
-            <img src="assets/McChicken.png" class="sandwich"/>
+
+        <div id="image-container">
+            <img src="assets/McChicken.png" class="image"/>
         </div>
-        <div class="converter">
-            <div class="money">
+
+        <div class="converter-container">
+            <div class="converter">
                 <input type="text" class="input" placeholder="50.00">
                 <label for="curr">Currency:</label>
                 <select name="currency" id="curr">
@@ -26,14 +29,18 @@
             </div>
             <button class="button">Convert</button>
         </div>
-        <div class="result">
-            <p></p>
+
+        <div class="result-container">
+            <p class="result"></p>
         </div>
+
         <div class="footer-container">
             <p class="footer">Made by: KIKODER</p>
             <img id="kiko-icon" src="assets/KikoDark.png" alt="KIKO" class="footer icon" />
         </div>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

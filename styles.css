@@ -33,7 +33,7 @@ html, body {
 }
 
 .image {
-    width: 400px;
+    width: 4px;
     filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.836));
 }
 
@@ -48,13 +48,32 @@ html, body {
 }
 
 .converter {
-    font-size: 1.rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-input[type="text"] {
-    width: 250px;
-    height: 40px;
+.converter input,
+.converter select {
+    height: 50px;
+    border: none;
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+.converter select {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 30%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.converter input[type="text"] {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 70%;
     font-size: 1.5rem;
     border: none;
 }
@@ -70,7 +89,7 @@ select {
     font-size: 2rem;
     font-weight: 900;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -95,4 +114,8 @@ select {
     width: 30px;
     height: 28px;
     padding-left: 5px;
+}
+
+.hidden {
+    display: none;
 }

@@ -13,6 +13,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: var(--brand-gold);
+    font-family: 'Roboto', sans-serif;
 }
 
 #app {
@@ -25,20 +26,29 @@ html, body {
 
 .title {
     color: var(--brand-red);
+    font-weight: 900;
+    font-size: 4rem;
 }
 
 .image {
-    width: 500px;
-    filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.63));
+    width: 450px;
+    filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.836));
 }
 
 .converter-container {
     background-color: var(--brand-red);
     color: var(--brand-gray);
-    max-width: 400px;
+    font-weight: 900;
+    width: 450px;
     border-radius: 20px;
     padding: 2rem;
     margin: 0 auto;
+}
+
+.converter {
+    border: 2px solid black;
+    font-size: 1.rem;
+    margin-bottom: 1rem;
 }
 
 .footer-container{

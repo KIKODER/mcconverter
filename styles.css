@@ -27,11 +27,13 @@ html, body {
 .title {
     color: var(--brand-red);
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 5rem;
+    margin-top: 6rem;
+    margin-bottom: -2rem;
 }
 
 .image {
-    width: 450px;
+    width: 400px;
     filter: drop-shadow(0 0 100px rgba(255, 255, 255, 0.836));
 }
 
@@ -46,9 +48,36 @@ html, body {
 }
 
 .converter {
-    border: 2px solid black;
     font-size: 1.rem;
     margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    width: 250px;
+    height: 40px;
+    font-size: 1.5rem;
+    border: none;
+}
+
+select {
+    border: none;
+}
+
+.button {
+    width: 24rem;
+    height: auto;
+    background-color: var(--brand-gold);
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.result {
+    color: var(--brand-red);
+    font-weight: 900;
+    font-size: 3rem;
 }
 
 .footer-container{

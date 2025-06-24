@@ -21,18 +21,19 @@
 
         <div class="converter-container">
             <div class="converter">
-                <input type="text" class="input" placeholder="50.00">
+                <input type="text" id="input" class="input" placeholder="50.00">
                 <select name="currency" id="curr">
                     <option value="usd">USD</option>
                     <option value="eur">EUR</option>
                     <option value="jpy">JPY</option>
                 </select>
             </div>
-            <button class="button">Convert</button>
+            <button id="button" class="button">Convert</button>
         </div>
 
         <div class="result-container">
-            <p class="result hidden">{result}</p>
+            <p id="can" class="can hidden">You can buy</p>
+            <p id="result" class="result"></p>
         </div>
 
         <div class="footer-container">

@@ -9,9 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttonEl = document.getElementById("button");
     const resultEl = document.getElementById("result");
     const canEl = document.getElementById("can");
+    const resultContainer = document.querySelector(".result-container");
 
     buttonEl.addEventListener("click", () => {
         const inputValue = parseFloat(inputEl.value);
+
+        resultContainer.classList.add("show");
 
         if (isNaN(inputValue) || inputValue <= 0) {
             resultEl.textContent = "Please enter a valid amount.";

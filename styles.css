@@ -115,7 +115,7 @@ html, body {
 .result-container {
     border: 5px solid var(--brand-red);
     border-style: dashed;
-    width: 350px;
+    width: 370px;
     border-radius: 20px;
     margin: 0 auto;
     margin-top: 1rem;

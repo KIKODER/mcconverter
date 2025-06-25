@@ -22,17 +22,27 @@ document.addEventListener("DOMContentLoaded", () => {
         const mcPrice = mcPrices[selectedCurrency];
 
         if (isNaN(inputValue) || inputValue <= 0) {
-            //resultEl.textContent = "Please enter a valid amount.";
-            //resultEl.style.opacity = 1;
             alert("Hey dumbass, you can't buy McChickens with that!");
             return;
         }
 
         const mcchickens = inputValue / mcPrice;
+
+        let subText = "You can buy";
+        if (mcchickens < 1) {
+            subText = "Sorry, you can only buy";
+        } else if (mcchickens >= 1000) {
+            subText = "Holy shit, Mr.Moneybags here can buy";
+        } else if (mcchickens >= 100) {
+            subText = "WOW! You can buy"
+        }
+
+        canEl.textContent = subText;
+        canEl.classList.remove("hidden");
+
         resultEl.textContent = `${mcchickens.toLocaleString(undefined, { maximumFractionDigits: 2 })} McChickens!`;
         
         resultEl.style.opacity = 1;
-        canEl.classList.remove("hidden");
         resultContainer.classList.add("show");
     });
 });

@@ -21,12 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const selectedCurrency = currencyEl.value;
         const mcPrice = mcPrices[selectedCurrency];
 
-        resultContainer.classList.add("show");
-
         if (isNaN(inputValue) || inputValue <= 0) {
-            resultEl.textContent = "Please enter a valid amount.";
-            resultEl.style.opacity = 1;
-            canEl.classList.remove("hidden");
+            //resultEl.textContent = "Please enter a valid amount.";
+            //resultEl.style.opacity = 1;
+            alert("Hey dumbass, you can't buy McChickens with that!");
             return;
         }
 
@@ -35,5 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
         
         resultEl.style.opacity = 1;
         canEl.classList.remove("hidden");
+        resultContainer.classList.add("show");
     });
 });
